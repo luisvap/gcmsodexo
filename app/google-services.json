@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "148838745161",
+    "project_id": "gcm-sodexo"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148838745161:android:35ff2ba09fe8bd0f",
+        "android_client_info": {
+          "package_name": "br.gcm.sodexo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQjj8dmdyxY-WG_NQtWS8mAqi2S3w2jTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
