@@ -11,10 +11,64 @@
       "_postman_id": "964726-9aea77fe-21c0-50b7-2c95-1de46023f7a2",
       "name": "#OK [maplink] search",
       "request": {
-        "url": "http://corp.maplink.com.br/Sodexo/StoreLocator/Service/Poi/search?currentPage=1&customResult=true&pageSize=10&options=2&radius=1000&pointsLatitude%5b0%5d=-23.533193&pointsLongitude%5b0%5d=-46.730540&tagsIds%5b0%5d=E92FB3D8-4A8E-4D85-B1DD-C0510262CF70&statusIds%5b0%5d=2",
         "method": "GET",
         "header": [],
         "body": {},
+        "url": {
+          "raw": "http://corp.maplink.com.br/Sodexo/StoreLocator/Service/Poi/search?currentPage=1&customResult=true&pageSize=10&options=2&radius=1000&pointsLatitude%5b0%5d=-23.533193&pointsLongitude%5b0%5d=-46.730540&tagsIds%5b0%5d=E92FB3D8-4A8E-4D85-B1DD-C0510262CF70&statusIds%5b0%5d=2",
+          "protocol": "http",
+          "host": [
+            "corp",
+            "maplink",
+            "com",
+            "br"
+          ],
+          "path": [
+            "Sodexo",
+            "StoreLocator",
+            "Service",
+            "Poi",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "currentPage",
+              "value": "1"
+            },
+            {
+              "key": "customResult",
+              "value": "true"
+            },
+            {
+              "key": "pageSize",
+              "value": "10"
+            },
+            {
+              "key": "options",
+              "value": "2"
+            },
+            {
+              "key": "radius",
+              "value": "1000"
+            },
+            {
+              "key": "pointsLatitude%5b0%5d",
+              "value": "-23.533193"
+            },
+            {
+              "key": "pointsLongitude%5b0%5d",
+              "value": "-46.730540"
+            },
+            {
+              "key": "tagsIds%5b0%5d",
+              "value": "E92FB3D8-4A8E-4D85-B1DD-C0510262CF70"
+            },
+            {
+              "key": "statusIds%5b0%5d",
+              "value": "2"
+            }
+          ]
+        },
         "description": ""
       },
       "response": []
@@ -23,49 +77,42 @@
       "_postman_id": "964726-a1951d3b-9d2a-05ad-e744-ca17f06c4e84",
       "name": "#OK [bus] user - register",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"user\": {\n    \"address\": \"logradouro\",\n    \"gender\": \"M\",\n    \"city\": \"city\",\n    \"ddd\": \"44\",\n    \"postalCode\": \"87240000\",\n    \"celPhone\": \"999507352\",\n    \"dateOfBirth\": \"1991-11-25\",\n    \"type\": \"B\",\n    \"number\": \"number\",\n    \"password\": \"123456789@A\",\n    \"optionEmail\": \"true\",\n    \"name\": \"Pontomobi Test 1\",\n    \"cpf\": \"81314350595\",\n    \"quarterName\": \"district\",\n    \"optionSms\": \"true\",\n    \"state\": \"state\",\n    \"complement\": \"complement\",\n    \"email\": \"sodexo1@mailinator.com\"\n  }\n}"
         },
+        "url": "http://200.185.125.124:443/userPortal/user",
         "description": "Cadastro usuário (tomar cuidado de mudar cpf posteriormente, usar um cpf válido)\n\nuserId: 4801"
       },
       "response": [
@@ -73,54 +120,46 @@
           "id": "964726-7028e6fa-cc7f-7be4-c67e-a0d622ebfd8f",
           "name": "resposta cadastro usuario",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\"user\":{\"address\":\"logradouro\",\"gender\":\"M\",\"city\":\"city\",\"ddd\":\"44\",\"postalCode\":\"87240000\",\"celPhone\":\"999507352\",\"dateOfBirth\":\"1991-11-25\",\"type\":\"B\",\r\n\"number\":\"number\",\"password\":\"123456789@A\",\"optionEmail\":\"true\",\"name\":\"Mobile Test Bus\",\"cpf\":\"17544610853\",\"quarterName\":\"district\",\"optionSms\":\"true\",\r\n\"state\":\"state\",\"complement\":\"complement\",\"email\":\"mobtest@gmail.com\"}}"
-            }
+            },
+            "url": "http://10.55.4.50:7803/userPortal/user"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -157,49 +196,42 @@
       "_postman_id": "964726-72a21f09-74c4-a7f2-d80d-7c4766a2060c",
       "name": "#OK [bus] user - login",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user/login",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\"user\":{\"password\":\"123456789@A\",\"cpf\":\"81314350595\",\"type\":\"B\",\"email\":\"sodexo1@mailinator.com\"}}"
         },
+        "url": "http://200.185.125.124:443/userPortal/user/login",
         "description": "Login\n\nhttp://10.55.4.50:7803/userPortal/user/login"
       },
       "response": [
@@ -207,7 +239,6 @@
           "id": "964726-0b1cbecc-117b-e9c1-e557-baa93f133142",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/userPortal/user/login",
             "method": "POST",
             "header": [
               {
@@ -256,12 +287,12 @@
             "body": {
               "mode": "raw",
               "raw": "{\"user\":{\"password\":\"123456789@A\",\"cpf\":\"81314350595\",\"type\":\"B\",\"email\":\"sodexo1@mailinator.com\"}}"
-            }
+            },
+            "url": "http://200.185.125.125:7803/userPortal/user/login"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -296,43 +327,35 @@
           "id": "964726-9cc558b6-6a3e-ac6d-d527-b0e90d9d3076",
           "name": "resposta login ok",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user/login",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
@@ -433,12 +456,12 @@
                 "}",
                 "}"
               ]
-            }
+            },
+            "url": "http://10.55.4.50:7803/userPortal/user/login"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -473,7 +496,6 @@
           "id": "964726-c1c0fd28-99a6-f258-2a4b-22dac8d3bc3d",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/userPortal/user/login",
             "method": "POST",
             "header": [
               {
@@ -522,12 +544,12 @@
             "body": {
               "mode": "raw",
               "raw": "{\"user\":{\"password\":\"123456789@A\",\"cpf\":\"96886404415\",\"type\":\"B\",\"email\":\"sodexo@mailinator.com\"}}"
-            }
+            },
+            "url": "http://200.185.125.125:7803/userPortal/user/login"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -564,46 +586,59 @@
       "_postman_id": "964726-0b816f08-698e-d79f-bb76-6d460b8ac53d",
       "name": "#OK [bus] user - get (by id)",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user?id=4802",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.124:443/userPortal/user?id=4802",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "userPortal",
+            "user"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "4802"
+            }
+          ]
+        },
         "description": "Obter usuario para um determinado ID gerado"
       },
       "response": [
@@ -611,7 +646,6 @@
           "id": "964726-b65a800d-0d8d-3a44-e987-19b447ebaedb",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/userPortal/user?id=4802",
             "method": "GET",
             "header": [
               {
@@ -657,12 +691,32 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/userPortal/user?id=4802",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "userPortal",
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "4802"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -699,46 +753,63 @@
       "_postman_id": "964726-9cbc6535-8f9d-1283-62d6-b7b303559414",
       "name": "#OK [bus] user - get (by cpf)",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user?cpf=81314350595&type=B",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.124:443/userPortal/user?cpf=81314350595&type=B",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "userPortal",
+            "user"
+          ],
+          "query": [
+            {
+              "key": "cpf",
+              "value": "81314350595"
+            },
+            {
+              "key": "type",
+              "value": "B"
+            }
+          ]
+        },
         "description": "Consulta usuario\nparametro 'B' eh beneficiario. 'E' é estabelecimento\n\nhttp://10.55.4.50:7803/userPortal/user?cpf=05407785757&type=B\nhttp://10.55.4.50:7803/userPortal/user?cpf=05407785757&type=B"
       },
       "response": [
@@ -746,7 +817,6 @@
           "id": "964726-22ae9f73-841d-5f00-79f5-de778c663ca1",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/userPortal/user?cpf=81314350595&type=B",
             "method": "GET",
             "header": [
               {
@@ -792,12 +862,36 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/userPortal/user?cpf=81314350595&type=B",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "userPortal",
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "cpf",
+                  "value": "81314350595"
+                },
+                {
+                  "key": "type",
+                  "value": "B"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -832,54 +926,70 @@
           "id": "964726-3669a2e8-4f86-7a89-f2d9-a3c0a56a776d",
           "name": "resposta busca usuario por cpf e tipo",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user?cpf=05407785757&type=B",
             "method": "GET",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": ""
+            },
+            "url": {
+              "raw": "http://10.55.4.50:7803/userPortal/user?cpf=05407785757&type=B",
+              "protocol": "http",
+              "host": [
+                "10",
+                "55",
+                "4",
+                "50"
+              ],
+              "port": "7803",
+              "path": [
+                "userPortal",
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "cpf",
+                  "value": "05407785757"
+                },
+                {
+                  "key": "type",
+                  "value": "B"
+                }
+              ]
             }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -916,43 +1026,35 @@
       "_postman_id": "964726-d26ed23c-2a61-3849-dc5a-bccb3c1affcf",
       "name": "#OK [bus] user - changePassword",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user/changePassword/4541",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "200.201.187.118",
-            "description": ""
+            "value": "200.201.187.118"
           }
         ],
         "body": {
@@ -1024,6 +1126,7 @@
             "}"
           ]
         },
+        "url": "http://200.185.125.124:443/userPortal/user/changePassword/4541",
         "description": "Troca de senha"
       },
       "response": [
@@ -1031,43 +1134,35 @@
           "id": "964726-5a46426c-ae65-7123-d50d-bd6bbe7c26c2",
           "name": "resposta do troca senha",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user/changePassword/4541",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
@@ -1138,12 +1233,12 @@
                 "}",
                 "}"
               ]
-            }
+            },
+            "url": "http://10.55.4.50:7803/userPortal/user/changePassword/4541"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -1180,48 +1275,39 @@
       "_postman_id": "964726-06a36d3f-1011-ba83-e76c-883671cffe46",
       "name": "#OK [bus] user - validatedCard",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user/validatedCard/4801",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           },
           {
             "key": "Content-Type",
-            "value": "application/x-www-form-urlencoded",
-            "description": ""
+            "value": "application/x-www-form-urlencoded"
           }
         ],
         "body": {
@@ -1231,6 +1317,7 @@
             "}"
           ]
         },
+        "url": "http://200.185.125.124:443/userPortal/user/validatedCard/4801",
         "description": "Validar cartão"
       },
       "response": [
@@ -1238,43 +1325,35 @@
           "id": "964726-0a67011e-b954-30dc-a1f3-13b562e25716",
           "name": "Resposta do cartão validado",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user/validatedCard/4541",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
@@ -1283,12 +1362,12 @@
                 "{",
                 "}"
               ]
-            }
+            },
+            "url": "http://10.55.4.50:7803/userPortal/user/validatedCard/4541"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -1323,7 +1402,6 @@
           "id": "964726-40a412b3-d2e6-3d4e-35f6-27b1b5027963",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/userPortal/user/validatedCard/4541",
             "method": "POST",
             "header": [
               {
@@ -1368,12 +1446,12 @@
                 "{",
                 "}"
               ]
-            }
+            },
+            "url": "http://200.185.125.125:7803/userPortal/user/validatedCard/4541"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -1410,49 +1488,42 @@
       "_postman_id": "964726-527567b5-dd96-db78-df45-dd88f3d154a1",
       "name": "#OK [bus] user - updateEmail",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user/updateEmail/4801",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\"email\":\"sodexo3@mailinator.com\"}"
         },
+        "url": "http://200.185.125.124:443/userPortal/user/updateEmail/4801",
         "description": "atualizar email de usuário"
       },
       "response": [
@@ -1460,43 +1531,35 @@
           "id": "964726-ae32e6ff-ac0f-72ed-457d-29f271b5bf5c",
           "name": "rsposta do alterar email",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user/updateEmail/4541",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
@@ -1542,12 +1605,12 @@
                 "\"",
                 "}"
               ]
-            }
+            },
+            "url": "http://10.55.4.50:7803/userPortal/user/updateEmail/4541"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -1584,46 +1647,60 @@
       "_postman_id": "964726-f40b1d9a-8d10-ee79-ca18-0920efe3a9ef",
       "name": "#OK [bus] beneficiary - listCards",
       "request": {
-        "url": "http://200.185.125.124:443/beneficiary/beneficiary/listCards?cpf=07464285700",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerBeneficiaryPortal",
-            "description": ""
+            "value": "consumerBeneficiaryPortal"
           },
           {
             "key": "contextid",
-            "value": "BeneficiaryService",
-            "description": ""
+            "value": "BeneficiaryService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.124:443/beneficiary/beneficiary/listCards?cpf=07464285700",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "beneficiary",
+            "beneficiary",
+            "listCards"
+          ],
+          "query": [
+            {
+              "key": "cpf",
+              "value": "07464285700"
+            }
+          ]
+        },
         "description": "Serviço de beneficiário - listagem dos cartões"
       },
       "response": [
@@ -1631,7 +1708,6 @@
           "id": "964726-ab2c0a39-e38e-db46-4d33-e98ea7001ef8",
           "name": "example",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/beneficiary/beneficiary/listCards?cpf=07464285700",
             "method": "GET",
             "header": [
               {
@@ -1677,12 +1753,33 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/beneficiary/beneficiary/listCards?cpf=07464285700",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "beneficiary",
+                "beneficiary",
+                "listCards"
+              ],
+              "query": [
+                {
+                  "key": "cpf",
+                  "value": "07464285700"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -1717,7 +1814,6 @@
           "id": "964726-f64bf341-9f2d-7ddf-fcdb-da7b87aa2b1e",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/beneficiary/beneficiary/listCards?cpf=81314350595",
             "method": "GET",
             "header": [
               {
@@ -1763,12 +1859,33 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/beneficiary/beneficiary/listCards?cpf=81314350595",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "beneficiary",
+                "beneficiary",
+                "listCards"
+              ],
+              "query": [
+                {
+                  "key": "cpf",
+                  "value": "81314350595"
+                }
+              ]
+            }
           },
           "status": "Not Found",
           "code": 404,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Access-Control-Allow-Origin",
@@ -1823,46 +1940,60 @@
       "_postman_id": "964726-1eacf312-dbae-3c96-7968-c626a2c4fe8c",
       "name": "#OK [bus] beneficiary - listActiveCards",
       "request": {
-        "url": "https://200.185.125.124:443/beneficiary/beneficiary/listActiveCards?cpf=07464285700",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerBeneficiaryPortal",
-            "description": ""
+            "value": "consumerBeneficiaryPortal"
           },
           {
             "key": "contextid",
-            "value": "BeneficiaryService",
-            "description": ""
+            "value": "BeneficiaryService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "https://200.185.125.124:443/beneficiary/beneficiary/listActiveCards?cpf=07464285700",
+          "protocol": "https",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "beneficiary",
+            "beneficiary",
+            "listActiveCards"
+          ],
+          "query": [
+            {
+              "key": "cpf",
+              "value": "07464285700"
+            }
+          ]
+        },
         "description": "Cartões - lista dos cartões ativos pro beneficiário"
       },
       "response": [
@@ -1870,7 +2001,6 @@
           "id": "964726-092444d2-530a-e7cd-b08f-50926783dcde",
           "name": "example",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/beneficiary/beneficiary/listActiveCards?cpf=07464285700",
             "method": "GET",
             "header": [
               {
@@ -1916,12 +2046,33 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/beneficiary/beneficiary/listActiveCards?cpf=07464285700",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "beneficiary",
+                "beneficiary",
+                "listActiveCards"
+              ],
+              "query": [
+                {
+                  "key": "cpf",
+                  "value": "07464285700"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -1956,7 +2107,6 @@
           "id": "964726-553ae645-9bac-7246-05f0-f475a07f64c9",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/beneficiary/beneficiary/listActiveCards?cpf=81314350595",
             "method": "GET",
             "header": [
               {
@@ -2002,12 +2152,33 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/beneficiary/beneficiary/listActiveCards?cpf=81314350595",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "beneficiary",
+                "beneficiary",
+                "listActiveCards"
+              ],
+              "query": [
+                {
+                  "key": "cpf",
+                  "value": "81314350595"
+                }
+              ]
+            }
           },
           "status": "Not Found",
           "code": 404,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Access-Control-Allow-Origin",
@@ -2062,46 +2233,64 @@
       "_postman_id": "964726-093b83f3-57cc-ba9e-1556-aab3d77b73bd",
       "name": "#OK [bus] beneficiary - listCardByCPForNumber",
       "request": {
-        "url": "http://200.185.125.124:443/beneficiary/beneficiary/listCardByCPForNumber?document=07464285700&number=6060713698998012",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerBeneficiaryPortal",
-            "description": ""
+            "value": "consumerBeneficiaryPortal"
           },
           {
             "key": "contextid",
-            "value": "BeneficiaryService",
-            "description": ""
+            "value": "BeneficiaryService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.124:443/beneficiary/beneficiary/listCardByCPForNumber?document=07464285700&number=6060713698998012",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "beneficiary",
+            "beneficiary",
+            "listCardByCPForNumber"
+          ],
+          "query": [
+            {
+              "key": "document",
+              "value": "07464285700"
+            },
+            {
+              "key": "number",
+              "value": "6060713698998012"
+            }
+          ]
+        },
         "description": "Beneficiário - Listar cartão através de cpf ou numero"
       },
       "response": [
@@ -2109,7 +2298,6 @@
           "id": "964726-c9868271-67a5-ebc2-95f8-4b23654859b2",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/beneficiary/beneficiary/listCardByCPForNumber?document=07464285700&number=6060713698998012",
             "method": "GET",
             "header": [
               {
@@ -2155,12 +2343,37 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/beneficiary/beneficiary/listCardByCPForNumber?document=07464285700&number=6060713698998012",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "beneficiary",
+                "beneficiary",
+                "listCardByCPForNumber"
+              ],
+              "query": [
+                {
+                  "key": "document",
+                  "value": "07464285700"
+                },
+                {
+                  "key": "number",
+                  "value": "6060713698998012"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -2197,46 +2410,75 @@
       "_postman_id": "964726-4c5ad5cd-3677-8f34-2caf-c1d738747cdd",
       "name": "#OK [bus] merchant - accountBank",
       "request": {
-        "url": "http://1200.185.125.124:443/sdxbr/esb/merchant/v1/accountBank/1427254?bank=748&agency=0226&account=44681&digit=5",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "200.201.187.118",
-            "description": ""
+            "value": "200.201.187.118"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://1200.185.125.124:443/sdxbr/esb/merchant/v1/accountBank/1427254?bank=748&agency=0226&account=44681&digit=5",
+          "protocol": "http",
+          "host": [
+            "1200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "sdxbr",
+            "esb",
+            "merchant",
+            "v1",
+            "accountBank",
+            "1427254"
+          ],
+          "query": [
+            {
+              "key": "bank",
+              "value": "748"
+            },
+            {
+              "key": "agency",
+              "value": "0226"
+            },
+            {
+              "key": "account",
+              "value": "44681"
+            },
+            {
+              "key": "digit",
+              "value": "5"
+            }
+          ]
+        },
         "description": "Obtem estabelecimento pela conta, banco"
       },
       "response": [
@@ -2244,7 +2486,6 @@
           "id": "964726-71ca44af-f23c-6b2d-79d3-48208d357944",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/accountBank/1427254?bank=748&agency=0226&account=44681&digit=5",
             "method": "GET",
             "header": [
               {
@@ -2290,12 +2531,48 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/accountBank/1427254?bank=748&agency=0226&account=44681&digit=5",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "sdxbr",
+                "esb",
+                "merchant",
+                "v1",
+                "accountBank",
+                "1427254"
+              ],
+              "query": [
+                {
+                  "key": "bank",
+                  "value": "748"
+                },
+                {
+                  "key": "agency",
+                  "value": "0226"
+                },
+                {
+                  "key": "account",
+                  "value": "44681"
+                },
+                {
+                  "key": "digit",
+                  "value": "5"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -2332,46 +2609,75 @@
       "_postman_id": "964726-e34cd84b-595b-da2b-40dd-a4d7f04a688e",
       "name": "#OK [bus] merchant - invoice (by invoice id)",
       "request": {
-        "url": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/invoice/62122?dtInit=2014-02-01&dtFinal=2014-03-01&rps=496589&merchantNumber=987449",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/invoice/62122?dtInit=2014-02-01&dtFinal=2014-03-01&rps=496589&merchantNumber=987449",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "sdxbr",
+            "esb",
+            "merchant",
+            "v1",
+            "invoice",
+            "62122"
+          ],
+          "query": [
+            {
+              "key": "dtInit",
+              "value": "2014-02-01"
+            },
+            {
+              "key": "dtFinal",
+              "value": "2014-03-01"
+            },
+            {
+              "key": "rps",
+              "value": "496589"
+            },
+            {
+              "key": "merchantNumber",
+              "value": "987449"
+            }
+          ]
+        },
         "description": "Ticket de venda do estabelecimento"
       },
       "response": [
@@ -2379,7 +2685,6 @@
           "id": "964726-9eab07f5-2e21-b9bc-506d-df16b940e69c",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/invoice/62122?dtInit=2014-02-01&dtFinal=2014-03-01&rps=496589&merchantNumber=987449",
             "method": "GET",
             "header": [
               {
@@ -2425,12 +2730,48 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/invoice/62122?dtInit=2014-02-01&dtFinal=2014-03-01&rps=496589&merchantNumber=987449",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "sdxbr",
+                "esb",
+                "merchant",
+                "v1",
+                "invoice",
+                "62122"
+              ],
+              "query": [
+                {
+                  "key": "dtInit",
+                  "value": "2014-02-01"
+                },
+                {
+                  "key": "dtFinal",
+                  "value": "2014-03-01"
+                },
+                {
+                  "key": "rps",
+                  "value": "496589"
+                },
+                {
+                  "key": "merchantNumber",
+                  "value": "987449"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -2467,46 +2808,39 @@
       "_postman_id": "964726-25cb9385-dcad-d0ce-9405-a2c7853261d9",
       "name": "#OK [bus] merchant - product (by product id)",
       "request": {
-        "url": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/product/62122",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/product/62122",
         "description": "Produto"
       },
       "response": [
@@ -2514,7 +2848,6 @@
           "id": "964726-daff75ca-a3c3-3420-268a-20f2bf115076",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/product/62122",
             "method": "GET",
             "header": [
               {
@@ -2560,12 +2893,12 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/product/62122"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -2602,46 +2935,68 @@
       "_postman_id": "964726-1aa3ee6f-4a6e-f309-83ab-50e1acd959e5",
       "name": "#OK [bus] merchant - repayment [by record id]",
       "request": {
-        "url": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/repayment/record/106384429?dtInit=2014-05-17&dtFinal=2014-05-17",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/repayment/record/106384429?dtInit=2014-05-17&dtFinal=2014-05-17",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "sdxbr",
+            "esb",
+            "merchant",
+            "v1",
+            "repayment",
+            "record",
+            "106384429"
+          ],
+          "query": [
+            {
+              "key": "dtInit",
+              "value": "2014-05-17"
+            },
+            {
+              "key": "dtFinal",
+              "value": "2014-05-17"
+            }
+          ]
+        },
         "description": "Reembolso\n\nRafael: Podem descrever o que sao e o formato dos parametros da query?"
       },
       "response": [
@@ -2649,7 +3004,6 @@
           "id": "964726-0697f823-c976-2c57-0f05-47e2d71fd628",
           "name": "200",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/repayment/record/106384429?dtInit=2014-05-17&dtFinal=2014-05-17",
             "method": "GET",
             "header": [
               {
@@ -2695,12 +3049,41 @@
                 "disabled": false
               }
             ],
-            "body": {}
+            "body": {},
+            "url": {
+              "raw": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/repayment/record/106384429?dtInit=2014-05-17&dtFinal=2014-05-17",
+              "protocol": "http",
+              "host": [
+                "200",
+                "185",
+                "125",
+                "125"
+              ],
+              "port": "7803",
+              "path": [
+                "sdxbr",
+                "esb",
+                "merchant",
+                "v1",
+                "repayment",
+                "record",
+                "106384429"
+              ],
+              "query": [
+                {
+                  "key": "dtInit",
+                  "value": "2014-05-17"
+                },
+                {
+                  "key": "dtFinal",
+                  "value": "2014-05-17"
+                }
+              ]
+            }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -2737,46 +3120,62 @@
       "_postman_id": "964726-17bae893-9299-8524-da59-b6354c9938a8",
       "name": "#OK [bus] merchant - search (by cpf)",
       "request": {
-        "url": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/search?document=18950719000159",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.124:443/sdxbr/esb/merchant/v1/search?document=18950719000159",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "124"
+          ],
+          "port": "443",
+          "path": [
+            "sdxbr",
+            "esb",
+            "merchant",
+            "v1",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "document",
+              "value": "18950719000159"
+            }
+          ]
+        },
         "description": "Busca estabelecimento por transacao"
       },
       "response": [
@@ -2784,54 +3183,69 @@
           "id": "964726-04da1f31-03ae-1659-1fe9-a9dc4b0921e2",
           "name": "resposta de estabelecimento por cnpj",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/search?document=18950719000159",
             "method": "GET",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerMerchantPortal",
-                "description": ""
+                "value": "consumerMerchantPortal"
               },
               {
                 "key": "contextid",
-                "value": "MerchantService",
-                "description": ""
+                "value": "MerchantService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": ""
+            },
+            "url": {
+              "raw": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/search?document=18950719000159",
+              "protocol": "http",
+              "host": [
+                "10",
+                "55",
+                "4",
+                "50"
+              ],
+              "port": "7803",
+              "path": [
+                "sdxbr",
+                "esb",
+                "merchant",
+                "v1",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "document",
+                  "value": "18950719000159"
+                }
+              ]
             }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -2868,49 +3282,42 @@
       "_postman_id": "964726-b9404fb3-9c1b-bef8-f5d7-671c19bc5728",
       "name": "#ERROR [bus] user - preregister",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user/preregister",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\"user\":{\"cpf\":\"96886404415\",\"email\":\"sodexo@mailinator.com\"}}"
         },
+        "url": "http://200.185.125.124:443/userPortal/user/preregister",
         "description": "Pré-cadastro de usuario\n\nhttp://10.55.4.50:7803/userPortal/user/preregister"
       },
       "response": [
@@ -2918,43 +3325,35 @@
           "id": "964726-59828ef4-c469-cee4-a266-6f1fcf2d3c38",
           "name": "resposta cartao nao encontrado",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user/preregister",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "10.55.15.19",
-                "description": ""
+                "value": "10.55.15.19"
               }
             ],
             "body": {
@@ -3023,12 +3422,12 @@
                 "}",
                 "}"
               ]
-            }
+            },
+            "url": "http://10.55.4.50:7803/userPortal/user/preregister"
           },
           "status": "Not Found",
           "code": 404,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Access-Control-Allow-Origin",
@@ -3081,43 +3480,35 @@
           "id": "964726-a989b690-9a29-9d53-1bb5-2d1d6b697893",
           "name": "resposta usuario ja cadastrado",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/userPortal/user/preregister",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerUserPortal",
-                "description": ""
+                "value": "consumerUserPortal"
               },
               {
                 "key": "contextid",
-                "value": "UserPortalService",
-                "description": ""
+                "value": "UserPortalService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "10.55.15.19",
-                "description": ""
+                "value": "10.55.15.19"
               }
             ],
             "body": {
@@ -3186,12 +3577,12 @@
                 "}",
                 "}"
               ]
-            }
+            },
+            "url": "http://10.55.4.50:7803/userPortal/user/preregister"
           },
           "status": "Precondition Failed",
           "code": 412,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Access-Control-Allow-Origin",
@@ -3246,49 +3637,42 @@
       "_postman_id": "964726-798d9eeb-8ffa-1364-eec1-37d704e92ffe",
       "name": "#ERROR [bus] user - forgotPassword",
       "request": {
-        "url": "http://200.185.125.124:443/userPortal/user/forgotPassword",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerUserPortal",
-            "description": ""
+            "value": "consumerUserPortal"
           },
           {
             "key": "contextid",
-            "value": "UserPortalService",
-            "description": ""
+            "value": "UserPortalService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\"user\":{\"type\":\"B\",\"email\":\"sodexo@mailinator.com\"}}"
         },
+        "url": "http://200.185.125.124:443/userPortal/user/forgotPassword",
         "description": "Serviço de 'Esqueci senha'\nPRECISA HAVER CRIADO O USUÁRIO!\nNÃO PODE TER ALTERADO O EMAIL!\nA NOVA SENHA ESTÁ VINDO NO 'MESSAGE DO RESPONSE' DEPOIS DO \";\", SEMPRE GERA UMA NOVA A CADA EXECUÇÃO.\n\nNo caso a senha aqui é:  157l4ich834\n\n======================\n\nPONTOMOBI: O SERVIDOR DE TESTE APONTA PARA PRODUCAO E DEIXA O USUARIO EM UM ESTADO ONDE NEM A SENHA ANTIGA E NEM A NOVA PODEM SER USADAS. NECESSARIO ACHAR O SERVIDOR CORRETO DE TESTE."
       },
       "response": [
@@ -3296,7 +3680,6 @@
           "id": "964726-ea4d0629-1398-6be1-bc57-a8a822ab1f29",
           "name": "a senha vem depois do ;",
           "originalRequest": {
-            "url": "http://200.185.125.125:7803/userPortal/user/forgotPassword",
             "method": "POST",
             "header": [
               {
@@ -3345,12 +3728,12 @@
             "body": {
               "mode": "raw",
               "raw": "{\"user\":{\"type\":\"B\",\"email\":\"sodexo@mailinator.com\"}}"
-            }
+            },
+            "url": "http://200.185.125.125:7803/userPortal/user/forgotPassword"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "key": "Content-Length",
@@ -3387,49 +3770,42 @@
       "_postman_id": "964726-54075a4f-926c-0d77-f541-f2f3e2af9f17",
       "name": "#ERROR [bus] beneficiary - validate/cardPassword",
       "request": {
-        "url": "http://200.185.125.125:7803/beneficiary/validate/cardPassword",
         "method": "POST",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerBeneficiaryPortal",
-            "description": ""
+            "value": "consumerBeneficiaryPortal"
           },
           {
             "key": "contextid",
-            "value": "BeneficiaryService",
-            "description": ""
+            "value": "BeneficiaryService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\"user\":{\r\n  \"id\":\"3671\",                         \r\n  \"cardNumber\": \"6060681239869010\",\r\n  \"password\": \"4251\"\r\n}}"
         },
+        "url": "http://200.185.125.125:7803/beneficiary/validate/cardPassword",
         "description": "Beneficiário - validar cartão"
       },
       "response": [
@@ -3437,54 +3813,46 @@
           "id": "964726-057b162d-92ea-761b-8fab-72ac2ee2d8dc",
           "name": "resposta valida cartão",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/beneficiary/validate/cardPassword",
             "method": "POST",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerBenecifiaryPortal",
-                "description": ""
+                "value": "consumerBenecifiaryPortal"
               },
               {
                 "key": "contextid",
-                "value": "BenecifiaryService",
-                "description": ""
+                "value": "BenecifiaryService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\"user\":{\r\n  \"id\":\"3671\",                         \r\n  \"cardNumber\": \"6060681239869010\",\r\n  \"password\": \"4251\"\r\n}}"
-            }
+            },
+            "url": "http://10.55.4.50:7803/beneficiary/validate/cardPassword"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -3521,46 +3889,39 @@
       "_postman_id": "964726-d8ef4f26-c15a-85ec-b98e-4ae2319be820",
       "name": "#ERROR [bus] merchant - repayment [by merchant id]",
       "request": {
-        "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/repayment/by/62122",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/repayment/by/62122",
         "description": "Reembolso\n\nRafael: Podem descrever o que sao e o formato dos parametros da query?"
       },
       "response": [
@@ -3568,54 +3929,46 @@
           "id": "964726-8badac21-2b72-f8b6-41c6-6055b1b7987a",
           "name": "reembolso pelo estabelecimento",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/repayment/by/62122",
             "method": "GET",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerMerchantPortal",
-                "description": ""
+                "value": "consumerMerchantPortal"
               },
               {
                 "key": "contextid",
-                "value": "MerchantService",
-                "description": ""
+                "value": "MerchantService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": ""
-            }
+            },
+            "url": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/repayment/by/62122"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "xml",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -3652,46 +4005,67 @@
       "_postman_id": "964726-58910068-3ea7-5fbe-a622-2b2b4b56b185",
       "name": "#ERROR [bus] merchant - repayment [by merchant id]",
       "request": {
-        "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/repayment/62122?dtInit=2014-02-02&dtFinal=2014-04-30",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": {
+          "raw": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/repayment/62122?dtInit=2014-02-02&dtFinal=2014-04-30",
+          "protocol": "http",
+          "host": [
+            "200",
+            "185",
+            "125",
+            "125"
+          ],
+          "port": "7803",
+          "path": [
+            "sdxbr",
+            "esb",
+            "merchant",
+            "v1",
+            "repayment",
+            "62122"
+          ],
+          "query": [
+            {
+              "key": "dtInit",
+              "value": "2014-02-02"
+            },
+            {
+              "key": "dtFinal",
+              "value": "2014-04-30"
+            }
+          ]
+        },
         "description": "Reembolso\n\nRafael: Podem descrever o que sao e o formato dos parametros da query?"
       },
       "response": [
@@ -3699,54 +4073,74 @@
           "id": "964726-2e98bfc5-ac62-02a6-19a0-b49366891358",
           "name": "reembolso feito pelo estabelecimento mediante 2 datas",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/repayment/62122?dtInit=2014-02-02&dtFinal=2014-04-30",
             "method": "GET",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerMerchantPortal",
-                "description": ""
+                "value": "consumerMerchantPortal"
               },
               {
                 "key": "contextid",
-                "value": "MerchantService",
-                "description": ""
+                "value": "MerchantService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": ""
+            },
+            "url": {
+              "raw": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/repayment/62122?dtInit=2014-02-02&dtFinal=2014-04-30",
+              "protocol": "http",
+              "host": [
+                "10",
+                "55",
+                "4",
+                "50"
+              ],
+              "port": "7803",
+              "path": [
+                "sdxbr",
+                "esb",
+                "merchant",
+                "v1",
+                "repayment",
+                "62122"
+              ],
+              "query": [
+                {
+                  "key": "dtInit",
+                  "value": "2014-02-02"
+                },
+                {
+                  "key": "dtFinal",
+                  "value": "2014-04-30"
+                }
+              ]
             }
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
@@ -3783,46 +4177,39 @@
       "_postman_id": "964726-2ffe7bf8-091c-46ff-d73c-8c72bc705167",
       "name": "#ERROR [bus] merchant - search (by merchant id)",
       "request": {
-        "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/search/1427252",
         "method": "GET",
         "header": [
           {
             "key": "systemid",
-            "value": "14",
-            "description": ""
+            "value": "14"
           },
           {
             "key": "systemname",
-            "value": "Portal Mobile",
-            "description": ""
+            "value": "Portal Mobile"
           },
           {
             "key": "consumerid",
-            "value": "consumerMerchantPortal",
-            "description": ""
+            "value": "consumerMerchantPortal"
           },
           {
             "key": "contextid",
-            "value": "MerchantService",
-            "description": ""
+            "value": "MerchantService"
           },
           {
             "key": "icllocale",
-            "value": "pt_BR",
-            "description": ""
+            "value": "pt_BR"
           },
           {
             "key": "version",
-            "value": "1.0",
-            "description": ""
+            "value": "1.0"
           },
           {
             "key": "addressip",
-            "value": "187.72.128.225",
-            "description": ""
+            "value": "187.72.128.225"
           }
         ],
         "body": {},
+        "url": "http://200.185.125.125:7803/sdxbr/esb/merchant/v1/search/1427252",
         "description": "Busca estabelecimento"
       },
       "response": [
@@ -3830,54 +4217,46 @@
           "id": "964726-f9757e66-3d1a-3457-0d3e-acd78cedeef4",
           "name": "dados estabelecimento",
           "originalRequest": {
-            "url": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/search/1427252",
             "method": "GET",
             "header": [
               {
                 "key": "systemid",
-                "value": "14",
-                "description": ""
+                "value": "14"
               },
               {
                 "key": "systemname",
-                "value": "Portal Mobile",
-                "description": ""
+                "value": "Portal Mobile"
               },
               {
                 "key": "consumerid",
-                "value": "consumerMerchantPortal",
-                "description": ""
+                "value": "consumerMerchantPortal"
               },
               {
                 "key": "contextid",
-                "value": "MerchantService",
-                "description": ""
+                "value": "MerchantService"
               },
               {
                 "key": "icllocale",
-                "value": "pt_BR",
-                "description": ""
+                "value": "pt_BR"
               },
               {
                 "key": "version",
-                "value": "1.0",
-                "description": ""
+                "value": "1.0"
               },
               {
                 "key": "addressip",
-                "value": "200.201.187.118",
-                "description": ""
+                "value": "200.201.187.118"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": ""
-            }
+            },
+            "url": "http://10.55.4.50:7803/sdxbr/esb/merchant/v1/search/1427252"
           },
           "status": "OK",
           "code": 200,
           "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
           "header": [
             {
               "name": "Content-Length",
