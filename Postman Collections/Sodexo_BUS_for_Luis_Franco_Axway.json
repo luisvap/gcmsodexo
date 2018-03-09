@@ -1,7 +1,7 @@
 {
   "info": {
-    "name": "Sodexo BUS for Luis Franco Axway",
     "_postman_id": "964726-63aaebde-d600-0891-6658-5677ed7c9fbb",
+    "name": "Sodexo BUS for Luis Franco Axway",
     "description": "Documentação gerada pro Rafael Kartz da .mobi",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
@@ -67,8 +67,7 @@
               "value": "2"
             }
           ]
-        },
-        "description": ""
+        }
       },
       "response": []
     },
